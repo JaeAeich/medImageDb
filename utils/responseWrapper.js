@@ -1,3 +1,4 @@
+//this is for consistent response from the apis.
 const success = (statusCode, result) => {
 	return {
 		status: "ok",

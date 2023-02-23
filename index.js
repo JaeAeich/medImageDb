@@ -11,7 +11,7 @@ const app = express();
 
 //middlewares
 app.use(express.json());
-app.use(morgan("common"));
+app.use(morgan("common")); //used to see which apis are hit on the terminal .
 app.use(
 	cors({
 		credentials: true,
@@ -19,7 +19,7 @@ app.use(
 	})
 );
 
-app.use("/api", routes);
+app.use("/api", routes); //all the routes to the api (barrel export).
 app.get("/", (req, res) => {
 	res.status(200).send("OK from Server");
 });
