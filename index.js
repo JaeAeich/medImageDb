@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const dbConnect = require("./dbConnect");
 const morgan = require("morgan");
 const cors = require("cors");
+const routes = require("./routers");
 
 dotenv.config("./.env");
 
@@ -18,6 +19,7 @@ app.use(
 	})
 );
 
+app.use("/api", routes);
 app.get("/", (req, res) => {
 	res.status(200).send("OK from Server");
 });

@@ -1,11 +1,6 @@
 const mongoose = require("mongoose");
 
 const annotationSchema = mongoose.Schema({
-	annotationId: {
-		type: String,
-		required: true,
-		unique: true,
-	},
 	annotation: {
 		type: String,
 		required: true,

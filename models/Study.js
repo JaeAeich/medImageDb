@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
 const studySchema = mongoose.Schema({
-	studyId: {
-		type: String,
-		required: true,
-		unique: true,
-	},
+	// studyId: {
+	// 	type: String,
+	// 	required: true,
+	// 	unique: true,
+	// },
 	name: {
 		type: String,
 		required: true,

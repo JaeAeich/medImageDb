@@ -1,17 +1,16 @@
 const mongoose = require("mongoose");
 
 const imageSchema = mongoose.Schema({
-	imageId: {
+	url: {
 		type: String,
 		required: true,
-		unique: true,
 	},
 	fileName: {
 		type: String,
 		required: true,
 	},
 	magnification: {
-		type: String,
+		type: Number,
 		required: true,
 	},
 	studyId: {
